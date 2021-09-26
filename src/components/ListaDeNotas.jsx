@@ -4,27 +4,19 @@ import CardNota from "./CardNota";
 
 class ListaDeNotas extends Component {
 
-    render(){
-        return (
+    render() {
+        return(
             <ul>
-                <li>
-                    {console.log("tesde de JS em React")}
-                    <div>trabalho</div>
-                    <CardNota/>                    
-                </li>
-                <li> 
-                    <div>trabalho</div>
-                    <CardNota/>                     
-                </li>
-                <li>
-                    <div>estudos</div>
-                    <CardNota/>                     
-                </li>
+                {Array.of("Trabalho", "Trabalho", "Estudos").map((categoria) => {
+                    return (
+                        <li>
+                            <div>{categoria}</div>
+                            <CardNota />
+                        </li>
+                    );
+                })}
             </ul>
-
-        );
+        );     
     }
 }
-
-
 export default ListaDeNotas;
