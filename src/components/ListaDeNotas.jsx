@@ -8,12 +8,16 @@ class ListaDeNotas extends Component {
         return (
             <ul>
                 <li>
+                    {console.log("tesde de JS em React")}
+                    <div>trabalho</div>
                     <CardNota/>                    
                 </li>
                 <li> 
+                    <div>trabalho</div>
                     <CardNota/>                     
                 </li>
                 <li>
+                    <div>estudos</div>
                     <CardNota/>                     
                 </li>
             </ul>
